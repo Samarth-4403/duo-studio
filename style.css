@@ -70,5 +70,8 @@ html, body {
 }
 .page1 video{
     width: 60%;
-    margin-left: 20%;
+    margin-top: 10vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
 }
