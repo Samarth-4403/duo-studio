@@ -26,6 +26,20 @@ function init(){
 
 init()
 
+var crsr = document.querySelector(".cursor")
+var main = document.querySelector(".main")
+main.addEventListener("mousemove", function(dets){
+    crsr.style.left = dets.x + 20+"px"
+    crsr.style.top = dets.y + 20+"px"
+})
+
+gsap.from(".page1 h1,.page1 h2", {
+    y:10,
+    rotate: 10,
+    opacity: 0,
+    delay:0.3,
+    duration: 0.7
+})
 var tl = gsap.timeline({
     scrollTrigger:{
         trigger:".page1 h1",
@@ -44,3 +58,16 @@ tl.to(".page1 h2", {
 tl.to(".page1 video",{
     width:"90%"
 },"anim")
+
+var tl2 = gsap.timeline({
+    scrollTrigger:{
+        trigger:".page1 h1",
+        scroller:".main",
+        start:"top -115%",
+        end:"top -120%",
+        scrub:3
+    }
+})
+tl2.to(".main",{
+    backgroundColor:"#fff"
+})
