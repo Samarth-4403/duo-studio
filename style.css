@@ -167,7 +167,6 @@ html, body {
     padding: 170px 100px;
 }
 .elem{
-    background-color: salmon;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
@@ -181,10 +180,12 @@ html, body {
     transform: translateY(10%) rotate(2deg);
 }
 .elem img:nth-child(1){
-    left: 2%;
+    left: -5%;
 }
 .elem img:nth-child(3){
-    right: 5%;
+    right: 4%;
+    height: 50vh;
+    width: 24.5vw;
 }
 .text-div{
     height: 16vh;
@@ -193,7 +194,7 @@ html, body {
     overflow: hidden;
 }
 .elem h1{
-    font-size: 7.5vw;
+    font-size: 5.5vw;
     font-weight: 600;
     transition: all ease-out 0.5s;
 }
@@ -214,4 +215,26 @@ html, body {
     position: relative;
     z-index: 9;
     padding: 140px 100px;
+}
+.page5 h2{
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 20px;
+    border-top: 2px solid #dadada;
+}
+.box:nth-last-child(1){
+    border-bottom: 2px solid #dadada;
+}
+footer{
+    height: 90vh;
+    width: 100%;
+    background-color: #EDBFFF;
 }
